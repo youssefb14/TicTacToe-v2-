@@ -33,7 +33,7 @@ Le projet consiste en le développement d’une application de jeu de morpion ut
 ## Instructions d’installation
 1. Cloner le dépôt :
    ```bash
-   git clone <url_du_dépôt>
+   git clone <[url_du_dépôt](https://github.com/youssefb14/TicTacToe-v2-)>
 2. Importer le projet dans votre IDE (Eclipse, IntelliJ, etc.).
 3. Lancer le projet en exécutant la classe principale.
 
