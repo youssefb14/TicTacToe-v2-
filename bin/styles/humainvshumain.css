@@ -1,0 +1,21 @@
+ /**********************************************************************
+ /* Style pour le label indiquant à qui est le tour
+ *********************************************************************/
+.status-label {
+    -fx-font-size: 36px; /* Taille de la police agrandie */
+    -fx-text-fill: #00000; /* Couleur de la police: bleu clair pour une apparence ludique */
+    -fx-font-weight: bold; /* Rend le texte en gras pour une meilleure visibilité */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.7), 5, 0.1, 0, 1); /* Ajoute une ombre portée pour un effet 3D léger */
+    -fx-padding: 10px; /* Ajoute un peu d'espace autour du texte pour éviter qu'il soit trop serré */
+}
+
+ /**********************************************************************
+ * 
+ *********************************************************************/
+ .label-score {
+    -fx-font-size: 20px;
+    -fx-text-fill: white;
+    -fx-background-color: #333;
+    -fx-padding: 5px;
+    -fx-background-radius: 5px;
+}

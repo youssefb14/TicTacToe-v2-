@@ -1,0 +1,92 @@
+ /**********************************************************************
+ * Titres
+ *********************************************************************/
+.learn-title {
+    -fx-font-size: 60px;
+    -fx-text-fill: #FF1493; 
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+}
+
+/**********************************************************************
+ * Menubar 
+ *********************************************************************/
+.menu-bar {
+    -fx-background-color: #00BFFF; /* Bleu Profond Ciel pour la barre de menu */
+    -fx-padding: 15px; /* Espacement généreux */
+    -fx-background-radius: 0 0 15px 15px; /* Bords arrondis seulement en bas */
+}
+
+.menu {
+    -fx-background-color: #00BFFF; /* Bleu Profond Ciel pour les menus */
+    -fx-font-size: 16px; /* Taille de police accessible */
+    -fx-font-weight: bold; /* Police en gras pour la lisibilité */
+    -fx-text-fill: #FFFFFF; /* Texte blanc pour contraste élevé */
+}
+
+.menu-item {
+    -fx-background-color: #00CED1; /* Cyan pour les items */
+    -fx-padding: 10px 20px; /* Espacement et taille larges pour faciliter la sélection */
+    -fx-text-fill: #FFFFFF; /* Texte blanc pour contraste */
+}
+
+.menu-item:focused, .menu-item:hover {
+    -fx-background-color: #3A5FCD; /* Bleu moyen, pour le survol */
+    -fx-scale-x: 1.1; /* Agrandissement léger */
+    -fx-scale-y: 1.1;
+    -fx-cursor: hand; /* Changement du curseur pour indiquer la sélectionnable */
+}
+
+/* Style des boutons arrondis */
+.button {
+    -fx-background-color: #00BFFF; /* Bleu Profond Ciel pour les boutons */
+    -fx-font-size: 18 px;    
+    -fx-text-fill: #000000; /* Texte blanc pour contraste */
+    -fx-font-weight: bold; /* En gras pour une meilleure lisibilité */
+    -fx-border-radius: 20; /* Coins arrondis */
+    -fx-background-radius: 20; /* Coins arrondis du fond */
+    -fx-padding: 20px 40px; /* Taille généreuse pour faciliter la sélection */
+}
+
+
+.button:hover {
+    -fx-background-color: #E0FFFF; /* Cyan très pâle pour le survol */
+    -fx-scale-x: 1.05; /* Agrandissement subtil */
+    -fx-scale-y: 1.05;
+    -fx-cursor: hand; /* Changement du curseur */
+}
+
+.setting-page, .humainvsia-page {
+    -fx-background-color: #B0E0E6; /* Poudre Bleu pour Setting et HumainVsIA */
+}
+
+.menu-page, .learn-page {
+    -fx-background-color: #E0FFFF; /* Cyan très pâle pour Menu et Learn */
+}
+
+/**********************************************************************
+ * Buttons radio 
+ *********************************************************************/
+.radio-button .dot {
+    -fx-background-color: transparent; /* transparent pour le cercle interne */
+}
+
+.radio-button:selected .dot {
+    -fx-background-color: #000000; /* Noir pour le rond du bouton radio sélectionné */
+}
+
+.radio-button {
+    -fx-font-size: 14px; /* Taille de police agrandie pour les enfants */
+    -fx-font-weight: bold; /* Texte en gras */
+    -fx-text-fill: #000000; /* Bleu Dodger */
+}
+
+.radio-button:selected {
+    -fx-background-color: #00BFFF; /* Bleu Profond Ciel */
+    -fx-background-radius: 15; /* Bords arrondis pour le fond du bouton radio */
+}
+
+.radio-button {
+    -fx-padding: 10px; /* Espacement autour du texte et de l'icône */
+    -fx-margin: 10px; /* Espacement entre les boutons radio */
+}

@@ -1,0 +1,56 @@
+ /**********************************************************************
+ /* Style pour le label indiquant à qui est le tour
+ *********************************************************************/
+ /*style de statusLabel */
+
+.status-label {
+	-fx-font-size: 26px; /* Taille de la police agrandie */
+    -fx-text-fill: #00000; /* Couleur de la police: bleu clair pour une apparence ludique */
+    -fx-font-weight: bold; /* Rend le texte en gras pour une meilleure visibilité */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.7), 5, 0.1, 0, 1); /* Ajoute une ombre portée pour un effet 3D léger */
+    -fx-padding: 10px; /* Ajoute un peu d'espace autour du texte pour éviter qu'il soit trop serré */
+}
+
+/**********************************************************************
+ /* Style pour le label de choix de difficulté
+ *********************************************************************/
+.choose-difficulty-label {
+    -fx-font-size: 36px; /* Taille de la police agrandie */
+    -fx-text-fill: white; /* Couleur du texte */
+    -fx-font-weight: bold; /* Rend le texte en gras pour une meilleure visibilité */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.8), 10, 0.1, 0, 1); /* Ajoute une ombre portée pour un effet 3D */
+    -fx-padding: 20px; /* Ajoute de l'espace autour du texte */
+    -fx-alignment: center; /* Centrer le texte */
+}
+
+/**********************************************************************
+ /* Styles pour les boutons de difficulté
+ *********************************************************************/
+.difficulty-button {
+    -fx-background-color: #2196F3; /* Couleur de fond bleue */
+    -fx-text-fill: white; /* Texte en blanc */
+    -fx-font-size: 20px; /* Taille de la police */
+    -fx-border-radius: 5; /* Arrondi les coins */
+    -fx-background-radius: 5; /* Arrondi les coins du fond */
+    -fx-padding: 15px 30px; /* Ajuste le padding pour dimensionner les boutons */
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 5, 0.1, 0, 1); /* Ombre portée */
+}
+
+
+.difficulty-button:hover {
+    -fx-background-color: white; /* Fond blanc au survol */
+    -fx-text-fill: #2196F3; /* Texte en bleu au survol */
+    -fx-font-size: 26px; /* Taille de la police légèrement augmentée au survol */
+    -fx-cursor: hand; /* Curseur en forme de main au survol */
+    -fx-padding: 20px 30px; 
+}
+
+
+.player-score-label, .ai-score-label {
+    -fx-font-size: 20px;
+    -fx-text-fill: white; /*Couleur du texte*/
+    -fx-background-color:rgba(0, 0, 0, 0.5);  /*Fond semi-transparent pour garantir la visibilit*/
+    -fx-padding: 10px; /* Padding pour ne pas coller les bords*/
+    -fx-border-color: black; /*  Bordure noire */
+    -fx-border-width: 2px; /*  Épaisseur de la bordure */
+}

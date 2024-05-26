@@ -1,0 +1,35 @@
+ /**********************************************************************
+ * Titres
+ *********************************************************************/
+.learn-title {
+    -fx-font-size: 84px;
+    -fx-text-fill: #FF1493; 
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+}
+
+.sous-title {
+    -fx-font-size: 48px;
+    -fx-text-fill: #FF1493;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+}
+
+/**********************************************************************
+ * ListView 
+ *********************************************************************/
+ .list-view {
+    -fx-background-color: #B0E0E6; /* Couleur de fond douce */
+    -fx-background-radius: 15; /* Bords arrondis */
+}
+
+.list-cell {
+    -fx-padding: 10px; /* Plus d'espace autour du texte */
+    -fx-font-size: 16px; /* Taille de texte plus grande */
+}
+
+.list-cell:filled:selected, .list-cell:filled:selected:hover {
+    -fx-background-color: #00BFFF; /* Couleur de fond pour les éléments sélectionnés */
+    -fx-background-radius: 15; /* Bords arrondis pour la sélection */
+    -fx-text-fill: white; /* Texte en blanc pour un bon contraste */
+}

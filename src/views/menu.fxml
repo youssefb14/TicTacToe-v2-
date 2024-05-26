@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="menuPage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-image: url('images/1.png'); -fx-background-size: cover; -fx-background-position: center center;" stylesheets="@/styles/menu.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MenuController">
+    <children>
+        <MenuBar AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="Options">
+                    <items>
+                        <MenuItem fx:id="menuitem_setting" mnemonicParsing="false" onAction="#openSetting" text="Settings" />
+                        <MenuItem fx:id="menuitem_models" mnemonicParsing="false" onAction="#openModel" text="Models" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+        <Button fx:id="btn_vs_human" layoutX="327.0" layoutY="474.0" mnemonicParsing="false" onAction="#Human_vs_Human" prefHeight="61.0" prefWidth="269.0" text="Human vs Human" />
+        
+		<VBox layoutX="616.0" layoutY="463.0" prefHeight="130.0" prefWidth="364.0" spacing="10">
+		    <children>
+		        <Button fx:id="btn_vs_ia" mnemonicParsing="false" onAction="#Human_vs_IA" prefHeight="61.0" prefWidth="328.0" text="Human vs IA" />
+		        <HBox prefHeight="39.0" prefWidth="351.0" spacing="10">
+		            <children>
+		                <RadioButton fx:id="radiobox_facile" mnemonicParsing="false" text="EASY">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="difficultyGroup" />
+                     </toggleGroup></RadioButton>
+		                <RadioButton fx:id="radiobox_moyen" mnemonicParsing="false" text="MEDIUM" toggleGroup="$difficultyGroup" />
+		                <RadioButton fx:id="radiobox_difficile" mnemonicParsing="false" text="DIFFICULT" toggleGroup="$difficultyGroup" />
+		            </children>
+		        </HBox>
+		    </children>
+		    <padding>
+		        <Insets bottom="10" left="10" right="10" top="10" />
+		    </padding>
+		</VBox>
+
+
+      <Text layoutX="240.0" layoutY="147.0" styleClass="learn-title" text="AI Tic Tac Toe Challenge">
+      
+         <font>
+            <Font size="67.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="logoHumain" fitHeight="266.0" fitWidth="375.0" layoutX="318.0" layoutY="183.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resources/images/logoHumain.png" />
+         </image></ImageView>
+      <ImageView fx:id="logoIA" fitHeight="266.0" fitWidth="210.0" layoutX="678.0" layoutY="208.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resources/images/logoIA.png" />
+         </image></ImageView>
+    </children>
+</AnchorPane>
+
+

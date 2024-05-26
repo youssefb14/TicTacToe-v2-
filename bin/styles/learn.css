@@ -1,0 +1,49 @@
+ /**********************************************************************
+ * Titres
+ *********************************************************************/
+/* Style pour le titre "Model" */
+.learn-title {
+    -fx-font-size: 84px;
+    -fx-text-fill: #FF1493;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+}
+
+.sous-title {
+    -fx-font-size: 48px;
+    -fx-text-fill: #FF1493;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+}
+
+ /**********************************************************************
+ * Autres
+ *********************************************************************/
+/* Style spécifique pour la page d'apprentissage */
+.learn-page-background {
+    -fx-background-color: #E0FFFF; /* Fond clair et apaisant */
+}
+
+.learn-menu-bar {
+    -fx-background-color: #FFB6C1; /* Rose doux */
+    -fx-background-radius: 20;
+}
+
+.learn-button {
+    -fx-background-color: #FFA07A; /* Orange doux */
+    -fx-text-fill: #FFFFFF; /* Texte blanc */
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+    -fx-font-size: 16px; /* Taille de texte adaptée aux enfants */
+}
+
+.learn-text-field {
+    -fx-border-color: #1E90FF; /* Bordure bleue */
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+
+.prgressbar_learn {
+    -fx-progress-color: #FF69B4;
+}
+ 

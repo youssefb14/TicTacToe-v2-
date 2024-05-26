@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.layout.StackPane?>
+
+
+<AnchorPane fx:id="settingPage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" stylesheets="@/styles/settings.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SettingController">
+   <children>
+      <GridPane layoutX="108.0" layoutY="188.0" prefHeight="280.0" prefWidth="1084.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="119.0" minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="163.0" minHeight="10.0" prefHeight="88.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="151.0" minHeight="10.0" prefHeight="68.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="145.0" minHeight="41.0" prefHeight="87.0" />
+        </rowConstraints>
+         <children>
+            <Label text="Hidden Layer Size" GridPane.columnIndex="1" />
+            <Label text="Learning Rate" GridPane.columnIndex="2" />
+            <Label text="Number of Hidden Layers" GridPane.columnIndex="3" />
+            <TextField fx:id="F_1" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="F_2" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <TextField fx:id="F_3" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <TextField fx:id="M_1" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="M_2" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <TextField fx:id="M_3" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <TextField fx:id="D_1" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="D_2" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <TextField fx:id="D_3" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Text text="EASY" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Text>
+            <Text text="MEDIUM" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Text>
+            <Text text="DIFFICULT" GridPane.columnIndex="0" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+               <font>
+                  <Font size="30.0" />
+               </font>
+            </Text>
+         </children>
+      </GridPane>
+      <Button fx:id="btn_save" layoutX="547.0" layoutY="481.0" mnemonicParsing="false" onAction="#save" prefHeight="83.0" prefWidth="240.0" text="SAVE" />
+      <Button fx:id="back_menu" layoutX="21.0" layoutY="24.0" mnemonicParsing="false" onAction="#backMenu" prefHeight="69.0" prefWidth="195.0" text="BACK" />
+      <Text layoutX="406.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="learn-title" text="AI Settings" />
+      
+		<StackPane fx:id="stackPane" layoutX="0" layoutY="0" prefWidth="1280" prefHeight="720" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" AnchorPane.bottomAnchor="0">
+	    	<Label fx:id="confirmationLabel" text="" />
+		</StackPane>
+      
+      
+   </children>
+</AnchorPane>
